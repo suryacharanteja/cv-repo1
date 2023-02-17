@@ -1,6 +1,6 @@
 FROM ubuntu:latest AS BUILD_IMAGE
 RUN apt update && apt install git wget unzip -y
-RUN mkdir /home/ubuntu/container && cd /homeu/ubuntu/container
+RUN mkdir /home/container && cd /homeu/container
 RUN git clone https://github.com/suryacharanteja/cv-repo1.git
 RUN cd cv-repo1 && tar -czf cv-repo1.tgz * && mv cv-repo1.tgz /root/cv-repo1.tgz
 
